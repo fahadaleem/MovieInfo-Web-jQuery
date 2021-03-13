@@ -1,0 +1,23 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.movie-poster
+{
+    width: 100%;
+    height: 300px;
+}
+
+#error
+{
+    text-align: center !important;
+}
+
+.thumbnail
+{
+    width: 100%;
+    height: 350px;
+}
