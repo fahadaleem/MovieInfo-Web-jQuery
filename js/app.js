@@ -11,7 +11,7 @@ $(document).ready(()=>{
 
 async function getMovies (searchText) {
     $("#movies").html("");
-    const response = await axios.get(`http://www.omdbapi.com/?apikey=54d369cc&s=${searchText}`);
+    const response = await axios.get(`https://www.omdbapi.com/?apikey=54d369cc&s=${searchText}`);
     console.log(response);
     const moviesData = response.data;
     if(moviesData.Response!=="False")
@@ -41,7 +41,7 @@ async function movieSelected (id) {
 
 async function getMovie () {
     const movieId = sessionStorage.getItem("movieId");
-    const response = await axios.get(`http://www.omdbapi.com/?apikey=54d369cc&i=${movieId}`);
+    const response = await axios.get(`https://www.omdbapi.com/?apikey=54d369cc&i=${movieId}`);
     console.log(response);
 
     const {Poster, Genre, Released, Director, Actors, Language, imdbRating, imdbID} = response.data;
